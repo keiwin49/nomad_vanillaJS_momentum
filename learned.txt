@@ -1,0 +1,69 @@
+body {
+    background-color: beige;
+}
+
+h1 {
+    color: cornflowerblue;
+    transition:color 0.5s ease-in-out;
+}
+
+.active {
+    color: tomato;
+}
+
+
+--
+const title = document.querySelector(".hello h1");
+
+function handleTitleClick() {
+    const clickedClass = "active";
+    title.classList.toggle(clickedClass);
+}
+
+title.addEventListener("click", handleTitleClick);
+
+
+
+
+
+// function handleTitleMouseover() {
+//     title.style.color = "red";
+//     title.innerText = "Mouse is here";
+// }
+//
+//
+// function handleTitleMouseleave() {
+//     title.style.color = "black";
+//     title.innerText = "Mouse is gone";
+// }
+//
+// function handleWindowResize() {
+//     document.body.style.backgroundColor = "tomato"
+// }
+// function handleWindowResize() {
+//     document.body.style.backgroundColor = "tomato"
+// }
+//
+// function handleWindowCopy() {
+//     alert("copier!!!")
+// }
+//
+// title.addEventListener("click", handleTitleClick);
+// title.addEventListener("mouseenter", handleTitleMouseover);
+// title.addEventListener("mouseleave", handleTitleMouseleave);
+//
+// window.addEventListener("resize", handleWindowResize)
+// window.addEventListener("copy", handleWindowCopy)
+//
+// function handleWindowOffline() {
+//     alert("SOS no wifi");
+// }
+//
+// function handleWindowOnline() {
+//     alert("All good");
+// }
+//
+// window.addEventListener("offline", handleWindowOffline);
+// window.addEventListener("online", handleWindowOnline)
+//
+// console.dir(title)
