@@ -17,4 +17,48 @@
     height: 100%;
     z-index: -1;
     animation: fadeIn .5s linear;
+    filter: brightness(90%);
+}
+
+#greeting {
+    font-size: 100%;
+    text-align: right;
+    position: relative;
+    right: 20px;
+    top : 5px;
+    color: white;
+
+}
+#clock {
+    text-align: center;
+    font-size: 500%;
+    color: white;
+}
+#todo-form {
+    text-align: center;
+}
+
+#todo-form input {
+    text-align: center;
+    width: 500px;
+    height: 32px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+}
+
+#todo-list {
+    text-align: center;
+    line-height: 200%;
+}
+
+
+#quote {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX( -50% );
+    color: lightgrey;
+    width: 600px;
 }
